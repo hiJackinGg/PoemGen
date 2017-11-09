@@ -1,0 +1,16 @@
+﻿body {
+}
+
+#main {
+  width: 100%;
+  text-align: center;
+}
+
+#poem {
+  display: inline-block;
+}
+
+#poemText {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

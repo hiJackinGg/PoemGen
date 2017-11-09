@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Poem generator</title>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/style.css")" />
+</head>
+<body>
+    <div id="main">
+    <div id="poem">
+
+@Html.DropDownList("selectSchema", new SelectList(ViewBag.PoemSchemas, "Id", "Value"))
+        <div id="poemText">
+            <textarea id="poemTextArea" cols="70" rows="8" disabled=""></textarea>
+        </div>
+            <button id="generatePoem">Generate</button>
+        </div>
+    </div>
+</body>
+    <script src="@Url.Content("~/Scripts/jquery-3.2.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Index.js")" type="text/javascript"></script>
+</html>

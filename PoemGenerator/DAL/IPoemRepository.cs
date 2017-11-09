@@ -1,0 +1,12 @@
+﻿using PoemGenerator.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace PoemGenerator.DAL
+{
+    public interface IPoemRepository : IDictionaryRepository, ISchemaRepository
+    {
+    }
+}
